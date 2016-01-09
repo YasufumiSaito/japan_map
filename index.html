@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<head>
+	<title>自治体の経済通信簿</title>
+	<meta property="og:image" content="map.png" />
+	<meta name="description" content="あまり知られていないが、内閣府が公開しているデータに「経済指標」というものがある。これは過去30年間の全国市区町村の経済的な実力を偏差値で表した、いわば自治体の通知表。日本地図上にマッピングしてみた。" />
+	<meta property="og:title" content="自治体の経済通信簿" />
+	<meta property="og:url" content="https://YasufumiSaito.github.io/japan_map/" />
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@yas104">
+	<meta name="twitter:creator" content="@yas104">
+	<meta name="twitter:title" content="自治体の経済通信簿">
+	<meta name="twitter:description" content="あまり知られていないが、内閣府が公開しているデータに「経済指標」というものがある。これは過去30年間の全国市区町村の経済的な実力を偏差値で表した、いわば自治体の通知表。日本地図上にマッピングしてみた。">
+	<meta name="twitter:image:src" content="map.png">
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.css' rel='stylesheet' />
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div id="map">
+		<div id="tooltip"></div>
+		<div id="info">
+			<h1>自治体の経済通信簿</h1>
+			<p>1741市区町村の経済データ(2010年時点)を整理し、内閣府が算出した"経済指標"。過去30年間の全国平均値が50となる。</p>
+			<h2>偏差値</h2>
+		</div>
+		<div id="info2">
+			<h2>項目ごとの偏差値は？</h2>
+			<p>上にある各自治体の経済指標は、以下の8種類の統計データに基づいて計算されている。全国平均と比べた際の経済的な好不調を偏差値(20〜80)で表している。</p>
+		</div>
+		<div id="credit">
+	      Data <a href="http://www5.cao.go.jp/keizai-shimon/kaigi/special/future/keizai-jinkou_data.html" target="_blank">内閣府</a>&nbsp;&nbsp;|&nbsp;&nbsp;Created by <a href="https://twitter.com/yas104" target="_blank">Yasufumi Saito</a>     
+	    </div>
+	</div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.7.0/d3-legend.min.js"></script>		
+<script>
+//Google analytics を忘れるな
+// 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+// 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+// 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+// 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+// 	  ga('create', 'UA-58632402-2', 'auto');
+// 	  ga('send', 'pageview');
+
+// 	</script>
+</body>
+</html>
